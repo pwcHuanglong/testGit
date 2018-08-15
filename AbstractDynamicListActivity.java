@@ -62,18 +62,7 @@ public class AbstractDynamicListActivity extends AppBaseDrawerActivity {
         recyclerView.setLayoutManager(layoutManager);
     }
 
-    @Override
-    protected void onStart() {
-        if (!isInitialSetupCompleted) {
-            setupView();
-            isInitialSetupCompleted = true;
-        }
-
-        // TODO Load next pages
-        requestData(0, 100);
-        super.onStart();
-    }
-
+   
     @Override
     protected void onStop() {
         subscriptions.clear();
