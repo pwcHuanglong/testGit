@@ -10,4 +10,8 @@ import java.util.List;
 
 public interface DynamicListDataProvider<T extends SFBaseObject> {
     List<T> fetchRecords(String objectName, List<String> fieldNames, int pageStart, int pageSize);
+	 List<T> fetchRecords(String objectName, List<String> fieldNames, int pageStart, int pageSize);
+	  List<T> fetchRecords(String objectName, List<String> fieldNames, int pageStart, int pageSize);
+	   List<T> fetchRecords(String objectName, List<String> fieldNames, int pageStart, int pageSize);
+	   
 }
